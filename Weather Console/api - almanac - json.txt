@@ -1,0 +1,51 @@
+airport_code			Observed location
+temp_high.normal.F		Average high temperature in fahrenheit
+temp_high.normal.C		Average high temperature in celsius
+temp_high.record.F		The highest temperature in fahrenheit measured on this date
+temp_high.record.C		The highest temperature in celsius measured on this date
+temp_high.recordyear	The year the highest temperature was measured on this date
+temp_low.normal.F		Average low temperature in fahrenheit
+temp_low.normal.C		Average low temperature in celsius
+temp_low.record.F		The lowest temperature in fahrenheit measured on this date
+temp_low.record.C		The lowest temperature in celsius measured on this date
+temp_low.recordyear		The year the lowest temperature was measured on this date
+
+
+http://api.wunderground.com/api/8390d409d9f2d532/alerts/q/FL/Greenwood.json
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "almanac": 1
+  }
+	}
+		,
+	"almanac": {
+		"airport_code": "KMAI",
+		"temp_high": {
+		"normal": {
+		"F": "91",
+		"C": "33"
+		}
+		,
+		"record": {
+		"F": "98",
+		"C": "36"
+		},
+		"recordyear": "1998"
+		},
+		"temp_low": {
+		"normal": {
+		"F": "70",
+		"C": "21"
+		}
+		,
+		"record": {
+		"F": "61",
+		"C": "16"
+		},
+		"recordyear": "2002"
+		}
+	}
+}

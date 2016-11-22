@@ -1,0 +1,149 @@
+Location
+
+type
+country
+country_iso3166
+country_name
+state
+city
+tz_short
+tz_long
+lat
+lon
+zip
+magic
+wmo
+l
+requesturl
+wuiurl
+
+
+
+Nearby Weather Stations (nearby_weather_stations)
+
+The nearby Personal Weather Stations returned in the feed represent the closest stations within a 40km radius, with a max number of stations returned of 50.
+
+airport.station.city
+airport.station.state
+airport.station.country
+airport.station.icao
+airport.station.lat
+airport.station.lon
+pws.station.neighborhood
+pws.station.city
+pws.station.state
+pws.station.country
+pws.station.id
+pws.station.distance_km
+pws.station.distance_mi
+
+http://api.wunderground.com/api/8390d409d9f2d532/geolookup/q/fl/Greenwood.json
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "geolookup": 1
+  }
+	}
+		,	"location": {
+		"type":"CITY",
+		"country":"US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"state":"FL",
+		"city":"Greenwood",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"lat":"30.86740685",
+		"lon":"-85.16896820",
+		"zip":"32443",
+		"magic":"1",
+		"wmo":"99999",
+		"l":"/q/zmw:32443.1.99999",
+		"requesturl":"US/FL/Greenwood.html",
+		"wuiurl":"http://www.wunderground.com/US/FL/Greenwood.html",
+		"nearby_weather_stations": {
+		"airport": {
+		"station": [
+		{ "city":"Marianna", "state":"FL", "country":"US", "icao":"KMAI", "lat":"30.83780670", "lon":"-85.18189240" }
+		,{ "city":"Bonifay", "state":"FL", "country":"US", "icao":"K1J0", "lat":"30.84577751", "lon":"-85.60138702" }
+		,{ "city":"", "state":"", "country":"", "icao":"", "lat":"", "lon":"" }
+		,{ "city":"Bainbridge", "state":"GA", "country":"US", "icao":"KBGE", "lat":"30.97159767", "lon":"-84.63692474" }
+		]
+		}
+		,
+		"pws": {
+		"station": [
+		{
+		"neighborhood":"Greenfield Subdivision",
+		"city":"Marianna",
+		"state":"FL",
+		"country":"US",
+		"id":"KFLMARIA6",
+		"lat":30.808628,
+		"lon":-85.191719,
+		"distance_km":6,
+		"distance_mi":4
+		},
+		{
+		"neighborhood":"06016RM",
+		"city":"Malone",
+		"state":"FL",
+		"country":"US",
+		"id":"KFLMALON3",
+		"lat":30.948112,
+		"lon":-85.162300,
+		"distance_km":8,
+		"distance_mi":5
+		},
+		{
+		"neighborhood":"North Side Marianna",
+		"city":"Marianna",
+		"state":"FL",
+		"country":"US",
+		"id":"KFLMARIA5",
+		"lat":30.786207,
+		"lon":-85.223145,
+		"distance_km":10,
+		"distance_mi":6
+		},
+		{
+		"neighborhood":"APRSWXNET",
+		"city":"Sneads",
+		"state":"FL",
+		"country":"US",
+		"id":"MAR243",
+		"lat":30.784500,
+		"lon":-84.869667,
+		"distance_km":30,
+		"distance_mi":18
+		},
+		{
+		"neighborhood":"Donalsonville",
+		"city":"Donalsonville",
+		"state":"GA",
+		"country":"US",
+		"id":"KGADONAL2",
+		"lat":31.045277,
+		"lon":-84.885986,
+		"distance_km":33,
+		"distance_mi":20
+		},
+		{
+		"neighborhood":"Melecky\u0027s Land",
+		"city":"Chattahoochee",
+		"state":"FL",
+		"country":"US",
+		"id":"KFLCHATT2",
+		"lat":30.700459,
+		"lon":-84.842751,
+		"distance_km":36,
+		"distance_mi":21
+		}
+		]
+		}
+		}
+	}
+}

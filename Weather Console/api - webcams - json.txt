@@ -1,0 +1,160 @@
+handle
+camid
+camindex
+assoc_station_id
+link
+linktext
+cameratype
+organization
+neighborhood
+zip
+city
+state
+country
+tzname
+lat
+lon
+updated
+downloaded
+isrecent
+CURRENTIMAGEURL
+WIDGETCURRENTIMAGEURL
+CAMURL
+
+http://api.wunderground.com/api/8390d409d9f2d532/webcams/q/fl/Greenwood.json
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "webcams": 1
+  }
+	}
+		,	"webcams": [
+		{
+		"handle": "TriggerWX",
+		"camid": "TriggerWXCAM1",
+		"camindex": "1",
+		"assoc_station_id": "KALENTER8",
+		"link": "http://",
+		"linktext": "",
+		"cameratype": "Foscam FI8904W",
+		"organization": "",
+		"neighborhood": "Cotton Creek",
+		"zip": "36330",
+		"city": "Enterprise",
+		"state": "AL",
+		"country": "US",
+		"tzname": "America/Chicago",
+		"lat": "31.34718323",
+		"lon": "-85.82846832",
+		"updated": "2016-01-24 19:33:52",
+		"updated_epoch": "1453682032",
+		"downloaded": "2014-07-12 20:05:51",
+		"isrecent": "1",
+		"CURRENTIMAGEURL": "http://icons.wunderground.com/webcamramdisk/t/r/TriggerWX/1/current.jpg?t=1466127600",
+		"WIDGETCURRENTIMAGEURL": "http://icons.wunderground.com/webcamramdisk/t/r/TriggerWX/1/widget.jpg?t=1466127600",
+		"CAMURL": "http://www.wunderground.com/webcams/TriggerWX/1/show.html"
+		},
+		{
+		"handle": "cottero",
+		"camid": "cotteroCAM1",
+		"camindex": "1",
+		"assoc_station_id": "KFLCARRA5",
+		"link": "http://",
+		"linktext": "",
+		"cameratype": "Dlink",
+		"organization": "Caribbean Raft Rentals",
+		"neighborhood": "Carrabelle, FL",
+		"zip": "32322",
+		"city": "Carrabelle",
+		"state": "FL",
+		"country": "US",
+		"tzname": "America/New_York",
+		"lat": "29.85199738",
+		"lon": "-84.66783905",
+		"updated": "2016-06-16 13:59:17",
+		"updated_epoch": "",
+		"downloaded": "2016-03-18 13:54:19",
+		"isrecent": "1",
+		"CURRENTIMAGEURL": "http://icons.wunderground.com/webcamramdisk/c/o/cottero/1/current.jpg?t=1466127600",
+		"WIDGETCURRENTIMAGEURL": "http://icons.wunderground.com/webcamramdisk/c/o/cottero/1/widget.jpg?t=1466127600",
+		"CAMURL": "http://www.wunderground.com/webcams/cottero/1/show.html"
+		},
+		{
+		"handle": "quinngfn",
+		"camid": "quinngfnCAM1",
+		"camindex": "1",
+		"assoc_station_id": "",
+		"link": "http://",
+		"linktext": "",
+		"cameratype": "Aposonic A-CDBIV07",
+		"organization": "PWS",
+		"neighborhood": "City of St George",
+		"zip": "32322",
+		"city": "Carrabelle",
+		"state": "FL",
+		"country": "US",
+		"tzname": "America/New_York",
+		"lat": "29.80354500",
+		"lon": "-84.73857117",
+		"updated": "2016-06-17 01:39:13",
+		"updated_epoch": "",
+		"downloaded": "2016-03-18 12:29:30",
+		"isrecent": "1",
+		"CURRENTIMAGEURL": "http://icons.wunderground.com/webcamramdisk/q/u/quinngfn/1/current.jpg?t=1466127600",
+		"WIDGETCURRENTIMAGEURL": "http://icons.wunderground.com/webcamramdisk/q/u/quinngfn/1/widget.jpg?t=1466127600",
+		"CAMURL": "http://www.wunderground.com/webcams/quinngfn/1/show.html"
+		},
+		{
+		"handle": "D2inPSJ",
+		"camid": "D2inPSJCAM1",
+		"camindex": "1",
+		"assoc_station_id": "",
+		"link": "http://",
+		"linktext": "",
+		"cameratype": "",
+		"organization": "",
+		"neighborhood": "St. Joe Beach",
+		"zip": "32456",
+		"city": "Port St Joe",
+		"state": "FL",
+		"country": "US",
+		"tzname": "America/New_York",
+		"lat": "29.90997505",
+		"lon": "-85.37041473",
+		"updated": "2016-06-17 01:37:59",
+		"updated_epoch": "",
+		"downloaded": "2016-03-18 18:05:14",
+		"isrecent": "1",
+		"CURRENTIMAGEURL": "http://icons.wunderground.com/webcamramdisk/d/2/D2inPSJ/1/current.jpg?t=1466127600",
+		"WIDGETCURRENTIMAGEURL": "http://icons.wunderground.com/webcamramdisk/d/2/D2inPSJ/1/widget.jpg?t=1466127600",
+		"CAMURL": "http://www.wunderground.com/webcams/D2inPSJ/1/show.html"
+		},
+		{
+		"handle": "bristow2010",
+		"camid": "bristow2010CAM1",
+		"camindex": "1",
+		"assoc_station_id": "KFLTALLA90",
+		"link": "http://",
+		"linktext": "",
+		"cameratype": "",
+		"organization": "",
+		"neighborhood": "Ox Bottom",
+		"zip": "32312",
+		"city": "Tallahassee",
+		"state": "FL",
+		"country": "US",
+		"tzname": "America/New_York",
+		"lat": "30.55916023",
+		"lon": "-84.27111053",
+		"updated": "2016-06-17 01:37:33",
+		"updated_epoch": "",
+		"downloaded": "2016-03-18 03:05:21",
+		"isrecent": "1",
+		"CURRENTIMAGEURL": "http://icons.wunderground.com/webcamramdisk/b/r/bristow2010/1/current.jpg?t=1466127600",
+		"WIDGETCURRENTIMAGEURL": "http://icons.wunderground.com/webcamramdisk/b/r/bristow2010/1/widget.jpg?t=1466127600",
+		"CAMURL": "http://www.wunderground.com/webcams/bristow2010/1/show.html"
+		}
+	]
+}

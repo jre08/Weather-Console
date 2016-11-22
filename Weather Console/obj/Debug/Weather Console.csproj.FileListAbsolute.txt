@@ -1,0 +1,7 @@
+C:\Users\edenfield-john\Documents\SharpDevelop Projects\Weather Console\Weather Console\obj\Debug\Weather Console.csprojResolveAssemblyReference.cache
+C:\Users\edenfield-john\Documents\SharpDevelop Projects\Weather Console\Weather Console\bin\Debug\Weather Console.exe.config
+C:\Users\edenfield-john\Documents\SharpDevelop Projects\Weather Console\Weather Console\bin\Debug\Weather Console.exe
+C:\Users\edenfield-john\Documents\SharpDevelop Projects\Weather Console\Weather Console\bin\Debug\Weather Console.pdb
+C:\Users\edenfield-john\Documents\SharpDevelop Projects\Weather Console\Weather Console\bin\Debug\Newtonsoft.Json.dll
+C:\Users\edenfield-john\Documents\SharpDevelop Projects\Weather Console\Weather Console\obj\Debug\Weather Console.exe
+C:\Users\edenfield-john\Documents\SharpDevelop Projects\Weather Console\Weather Console\obj\Debug\Weather Console.pdb

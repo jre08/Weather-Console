@@ -1,0 +1,282 @@
+title
+airport_code
+error
+period_of_record.date_start.date(see period_of_record date below)
+period_of_record.date_end.date(see period_of_record date below)
+temp_high
+temp_low
+precip
+dewpoint_high
+dewpoint_low
+cloud_cover.cond
+chance_of(see chance_of below)
+period_of_record date
+
+epoch
+pretty
+day
+month
+year
+yday
+hour
+min
+sec
+isdst
+monthname
+weekday_short
+weekday
+ampm
+tz_short
+tz_long
+chance_of
+
+tempoversixty
+chanceofwindyday
+chanceofpartlycloudyday
+chanceofsunnycloudyday
+chanceofcloudyday
+chanceoffogday
+chanceofhumidday
+chanceofprecip
+chanceofrainday
+tempoverninety
+chanceofthunderday
+chanceofsnowonground
+chanceoftornadoday
+chanceofsultryday
+tempbelowfreezing
+tempoverfreezing
+chanceofhailday
+chanceofsnowday
+
+http://api.wunderground.com/api/8390d409d9f2d532/planner_MMDDMMDD/q/fl/Greenwood.json
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "planner": 1
+  }
+		, "results": [
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "AR",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "72936.1.99999",
+		"l": "/q/zmw:72936.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "CA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "95635.1.99999",
+		"l": "/q/zmw:95635.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "DE",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "19950.1.99999",
+		"l": "/q/zmw:19950.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "FL",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "32443.1.99999",
+		"l": "/q/zmw:32443.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "IN",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "46142.1.99999",
+		"l": "/q/zmw:46142.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "KY",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "42634.2.99999",
+		"l": "/q/zmw:42634.2.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "LA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "71033.1.99999",
+		"l": "/q/zmw:71033.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "ME",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "04255.1.99999",
+		"l": "/q/zmw:04255.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "MI",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "48006.2.99999",
+		"l": "/q/zmw:48006.2.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "MN",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "55331.3.99999",
+		"l": "/q/zmw:55331.3.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "MS",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "38930.1.99999",
+		"l": "/q/zmw:38930.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "MO",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "64034.1.99999",
+		"l": "/q/zmw:64034.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "NE",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "68366.1.99999",
+		"l": "/q/zmw:68366.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "NY",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "14839.1.99999",
+		"l": "/q/zmw:14839.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "NS",
+		"country": "CA",
+		"country_iso3166":"CA",
+		"country_name":"Canada",
+		"zmw": "00000.1.71397",
+		"l": "/q/zmw:00000.1.71397"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "SC",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "29646.1.99999",
+		"l": "/q/zmw:29646.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "TX",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "76246.1.99999",
+		"l": "/q/zmw:76246.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "VA",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "22943.1.99999",
+		"l": "/q/zmw:22943.1.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "WV",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "26415.2.99999",
+		"l": "/q/zmw:26415.2.99999"
+		}
+		,
+		{
+		"name": "Greenwood",
+		"city": "Greenwood",
+		"state": "WI",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "54437.1.99999",
+		"l": "/q/zmw:54437.1.99999"
+		}
+		]
+	}
+}

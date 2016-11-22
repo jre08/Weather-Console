@@ -1,0 +1,63 @@
+
+type	Translated
+---		-----------	
+HUR		Hurricane Local Statement
+TOR		Tornado Warning
+TOW		Tornado Watch
+WRN		Severe Thunderstorm Warning
+SEW		Severe Thunderstorm Watch
+WIN		Winter Weather Advisory
+FLO		Flood Warning
+WAT		Flood Watch / Statement
+WND		High Wind Advisory
+SVR		Severe Weather Statement
+HEA		Heat Advisory
+FOG		Dense Fog Advisory
+SPE		Special Weather Statement
+FIR		Fire Weather Advisory
+VOL		Volcanic Activity Statement
+HWW		Hurricane Wind Warning
+REC		Record Set
+REP		Public Reports
+PUB		Public Information Statement
+
+-------------------------------------------
+
+description
+date
+date_epoch
+expires
+expires_epoch
+message
+phenomena
+significance
+ZONES
+StormBased
+
+
+http://api.wunderground.com/api/8390d409d9f2d532/alerts/q/FL/Greenwood.json
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+	}
+		,"query_zone": "011",
+	"alerts": [
+		{
+		"type": "HEA",
+		"description": "Heat Advisory",
+		"date": "9:17 PM CDT on June 16, 2016",
+		"date_epoch": "1466129820",
+		"expires": "7:00 PM CDT on June 17, 2016",
+		"expires_epoch": "1466208000",
+		"tz_short":"CDT",
+		"tz_long":"America/Chicago",
+		"message": "\u000A...Heat advisory remains in effect until 7 PM CDT Friday...\u000A\u000A* temperatures...highs in the mid to upper 90s combined with \u000A high humidity will result in peak heat index values of 106 to \u000A 110. \u000A\u000A* Impacts...heat stress will reach dangerous levels and could \u000A lead to heat exhaustion or heat stroke for those working \u000A outdoors. \u000A\u000APrecautionary/preparedness actions...\u000A\u000ATake extra precautions...if you work or spend time outside. When\u000Apossible...reschedule strenuous activities to early morning or\u000Aevening. Know the signs and symptoms of heat exhaustion and heat\u000Astroke. Wear light weight and loose fitting clothing when possible\u000Aand drink plenty of water.\u000A\u000AA heat advisory means that a period of hot temperatures is\u000Aexpected. The combination of hot temperatures and high humidity\u000Awill combine to create a situation in which heat illnesses are\u000Apossible. Drink plenty of fluids...stay in an air-conditioned\u000Aroom...stay out of the sun...and check up on relatives and\u000Aneighbors.\u000A\u000A\u000A\u000A\u000A",
+		"phenomena": "HT",
+		"significance": "Y",
+	]
+}
