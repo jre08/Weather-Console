@@ -24,10 +24,20 @@ namespace Weather_Console
 		{
 			readJson("32443");
 			
-			conditions current = new conditions(1);
+			astronomy astro = new astronomy(0);
+			//almanac allmanacs = new almanac(0);
+			//conditions current = new conditions(0);
+			
 			Console.WriteLine("Weather Underground Console");
 			Console.WriteLine(" ---------------- ");
+			Console.WriteLine(astro.ageOfMoon);
+			Console.WriteLine(astro.precentIlluminated);
+			Console.WriteLine(astro.hemisphere);
+			Console.WriteLine(astro.sunset_hour);
+			//Console.WriteLine(current.display_location_city);
 
+			
+			
 			
 			
 			// TODO: Implement Functionality Here
@@ -56,9 +66,21 @@ namespace Weather_Console
 			{
 				Globals.current = sr.ReadToEnd();
 			}
+			
 			//JObject o = JObject.Parse(textjson);
 			//Debug.Print("forecast: " +o["forecast"]["txt_forecast"]["forecastday"][0]);
-			System.Diagnostics.Debug.Print(Globals.current);
+			
+			var request1 = WebRequest.Create("http://api.wunderground.com/api/8390d409d9f2d532/astronomy/q/" + city + ".json");
+			request.ContentType = "application/json";
+			var response1 = (HttpWebResponse)request1.GetResponse();
+
+			using (var sr = new StreamReader(response1.GetResponseStream()))
+			{
+				Globals.astronomy = sr.ReadToEnd();
+			}
+			//JObject o = JObject.Parse(textjson);
+			//Debug.Print("forecast: " +o["forecast"]["txt_forecast"]["forecastday"][0]);
+			System.Diagnostics.Debug.Print(Globals.astronomy);
 
 		}
 	
@@ -241,9 +263,19 @@ namespace Weather_Console
 	
 	public class alerts
 	{
-		JObject o = JObject.Parse(Globals.current);
+		JObject o = JObject.Parse(Globals.alerts);
 		
-		public JToken image_url { get; set; }
+		public JToken description { get; set; }
+		public JToken date { get; set; }
+		public JToken date_epoch { get; set; }
+		public JToken expires { get; set; }
+		public JToken expires_epoch { get; set; }
+		public JToken message { get; set; }
+		public JToken phenomena { get; set; }
+		public JToken significance { get; set; }
+		public JToken tz_short { get; set; }
+		public JToken tz_long { get; set; }
+		public JToken StormBased { get; set; }
 		
 		
 		
@@ -261,9 +293,24 @@ namespace Weather_Console
 			//this.period = (o["forecast"]["txt_forecast"]["forecastday"][num]["period"]);
 			//this.period = (o["current_observation"]);
 			
+			//this.length = o["alerts"].HasValues;
+			JArray jarr = new JArray(o["alerts"]);
 			
-			this.image_url  = (o["current_observation"]["image"]["url"]);
 			
+			if (jarr.Count > 0 )
+			{
+				this.description = (o["alerts"][num]["description"]);
+				this.date = (o["alerts"][num]["date"]);
+				this.date_epoch = (o["alerts"][num]["date_epoch"]);
+				this.expires = (o["alerts"][num]["expires"]);
+				this.expires_epoch = (o["alerts"][num]["expires_epoch"]);
+				this.message = (o["alerts"][num]["message"]);
+				this.phenomena = (o["alerts"][num]["phenomena"]);
+				this.significance = (o["alerts"][num]["significance"]);
+				this.tz_short = (o["alerts"][num]["tz_short"]);
+				this.tz_long = (o["alerts"][num]["tz_long"]);
+				this.StormBased = (o["alerts"][num]["StormBased"]);
+			}
 			
 		}
 		
@@ -271,9 +318,19 @@ namespace Weather_Console
 	
 	public class almanac
 	{
-		JObject o = JObject.Parse(Globals.current);
+		JObject o = JObject.Parse(Globals.almanac);
 		
-		public JToken image_url { get; set; }
+		public JToken airport_code { get; set; }
+		public JToken temp_high_normal_F { get; set; }
+		public JToken temp_high_normal_C { get; set; }
+		public JToken temp_high_record_F { get; set; }
+		public JToken temp_high_record_C { get; set; }
+		public JToken temp_high_recordyear { get; set; }
+		public JToken temp_low_normal_F	 { get; set; }
+		public JToken temp_low_normal_C { get; set; }
+		public JToken temp_low_record_F { get; set; }
+		public JToken temp_low_record_C { get; set; }
+		public JToken temp_low_recordyear { get; set; }
 		
 		
 		
@@ -292,7 +349,17 @@ namespace Weather_Console
 			//this.period = (o["current_observation"]);
 			
 			
-			this.image_url  = (o["current_observation"]["image"]["url"]);
+			this.airport_code  = (o["almanac"]["airport_code"]);
+			this.temp_high_normal_F  = (o["almanac"]["temp_high"]["normal"]["F"]);
+			this.temp_high_normal_C  = (o["almanac"]["temp_high"]["normal"]["C"]);
+			this.temp_high_record_F  = (o["almanac"]["temp_high_record_F"]);
+			this.temp_high_record_C  = (o["almanac"]["temp_high_record_C"]);
+			this.temp_high_recordyear  = (o["almanac"]["temp_high_recordyear"]);
+			this.temp_low_normal_F	  = (o["almanac"]["temp_low"]["normal"]["F"]);
+			this.temp_low_normal_C  = (o["almanac"]["temp_low"]["normal"]["C"]);
+			this.temp_low_record_F  = (o["almanac"]["temp_low_record_F"]);
+			this.temp_low_record_C  = (o["almanac"]["temp_low_record_C"]);
+			this.temp_low_recordyear  = (o["almanac"]["temp_low_recordyear "]);
 			
 			
 		}
@@ -302,9 +369,22 @@ namespace Weather_Console
 	
 	public class astronomy
 	{
-		JObject o = JObject.Parse(Globals.current);
+		JObject o = JObject.Parse(Globals.astronomy);
 		
-		public JToken image_url { get; set; }
+		public JToken precentIlluminated { get; set; }
+		public JToken ageOfMoon { get; set; }
+		public JToken phaseofMoon { get; set; }
+		public JToken hemisphere { get; set; }
+		public JToken current_time_hour { get; set; }
+		public JToken current_time_minute { get; set; }
+		public JToken sunrise_hour { get; set; }
+		public JToken sunrise_minute { get; set; }
+		public JToken sunset_hour { get; set; }
+		public JToken sunset_minute { get; set; }
+		public JToken moonrise_hour { get; set; }
+		public JToken moonrise_minute { get; set; }
+		public JToken moonset_hour { get; set; }
+		public JToken moonset_minute { get; set; }
 		
 		
 		
@@ -323,7 +403,21 @@ namespace Weather_Console
 			//this.period = (o["current_observation"]);
 			
 			
-			this.image_url  = (o["current_observation"]["image"]["url"]);
+			this.precentIlluminated  = (o["moon_phase"]["percentIlluminated"]);
+			this.ageOfMoon  = (o["moon_phase"]["ageOfMoon"]);
+			this.phaseofMoon  = (o["moon_phase"]["phaseofMoon"]);
+			this.hemisphere  = (o["moon_phase"]["hemisphere"]);
+			this.current_time_hour  = (o["moon_phase"]["current_time"]["hour"]);
+			this.current_time_minute  = (o["moon_phase"]["current_time"]["minute"]);
+			this.sunrise_hour  = (o["moon_phase"]["sunrise"]["hour"]);
+			this.sunrise_minute  = (o["moon_phase"]["sunrise"]["minute"]);
+			this.sunset_hour  = (o["moon_phase"]["sunset"]["hour"]);
+			this.sunset_minute  = (o["moon_phase"]["sunset"]["minute"]);
+
+			this.moonrise_hour  = (o["moon_phase"]["moonrise"]["hour"]);
+			this.moonrise_minute  = (o["moon_phase"]["moonrise"]["minute"]);
+			this.moonset_hour  = (o["moon_phase"]["moonset"]["hour"]);
+			this.moonset_minute  = (o["moon_phase"]["moonset"]["minute"]);
 			
 			
 		}
@@ -538,5 +632,6 @@ namespace Weather_Console
 			
 		}
 		
+	}
 	}
 }
